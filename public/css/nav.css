@@ -2,7 +2,7 @@ header{
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: grey;
+    background-color: #557B83;
     border-bottom: 1px solid #333;
     box-shadow: 0 2px 5px rgba(0,0,0,0.4);
     width: 100%;
@@ -38,8 +38,9 @@ nav{
     position: sticky;
     top: 0;
     border-top: 1px solid #333;
-    background-color: #0b0b0b6c;
+    background-color: #39AEA9;
     padding: 8px 0;
+    z-index: 100;
 }
 nav.nav-active{
     display: flex;
