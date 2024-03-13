@@ -2,7 +2,7 @@ header{
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: #557B83;
+    background-color: #1cb0ce;
     border-bottom: 1px solid #333;
     box-shadow: 0 2px 5px rgba(0,0,0,0.4);
     width: 100%;
@@ -38,7 +38,7 @@ nav{
     position: sticky;
     top: 0;
     border-top: 1px solid #333;
-    background-color: #39AEA9;
+    background-color: #11afda;
     padding: 8px 0;
     z-index: 100;
 }
@@ -47,7 +47,7 @@ nav.nav-active{
 }
 nav a{
     font-size: 14px;
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     border-radius: 15px;
     
@@ -55,13 +55,13 @@ nav a{
     transition: all 0.3s ease;
 }
 nav a.active{
-    background-color: #333;
+    background-color: whitesmoke;
 }
 a.active:hover{
     color: #b2b2b2;
 }
 nav a:hover{
-    color: #333;
+    color: white;
     text-decoration: underline;
 }
 .burger.toggle .line1{
