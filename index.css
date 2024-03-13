@@ -42,7 +42,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #b1b1b1;
+    background-color: #333;
+    color: #f1f1f1;
 }
 .login{
     position: absolute;

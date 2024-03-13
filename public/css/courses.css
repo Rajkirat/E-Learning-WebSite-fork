@@ -3,9 +3,10 @@
     grid-template-columns: 280px auto;
     gap: 10px;
     padding: 7px;
+    background-color: #0b0b0b;
 }
 aside{
-    background-color: #f4f4f4;
+    background-color: #212121;
     padding: 20px;
     border-radius: 13px;
     box-shadow: 0 2px 3px 2px rgba(0,0,0,0.4);
@@ -19,16 +20,19 @@ aside ul ul{
     white-space: nowrap;
 }
 aside h2{
-    font-size: 20px;
-    color: #333;
+    font-size: 25px;
+    color: #f4f4f4;
 }
 aside a,
 aside button{
-    font-size: 16px;
-    color: #333;
+    font-size: 20px;
+    font-weight: 200;
+    color: #F0F0F0;
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
+    background-color:#212121;
+    gap:5px;
 }
 aside button:hover{
     color: #0b0b0b;
@@ -47,7 +51,6 @@ aside button:hover{
     gap: 15px;
     margin: 20px 0;
 }
-
 .course{
     background-color: #f4f4f4;
     border-radius: 13px;
@@ -104,6 +107,7 @@ section{
     display: none;
     flex-direction: column;
     gap: 10px;
+    padding: 20px solid lightblue;
 }
 input[type="radio"]{
     width: 20px;
@@ -117,11 +121,13 @@ input[type="radio"]{
     display: flex;
     flex-direction: column;
     padding-left: 10px;
+    color: black;
 }
 .question div{
     display: flex;
     gap: 10px;
     align-items: center;
+    color: black;
 }
 .submit{
     width: 100%;

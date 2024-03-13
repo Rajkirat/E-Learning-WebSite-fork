@@ -38,7 +38,7 @@ nav{
     position: sticky;
     top: 0;
     border-top: 1px solid #333;
-    background-color: #11afda;
+    background-color: #E0F4FF;
     padding: 8px 0;
     z-index: 100;
 }
@@ -55,10 +55,10 @@ nav a{
     transition: all 0.3s ease;
 }
 nav a.active{
-    background-color: whitesmoke;
+    background-color: #fff;
 }
 a.active:hover{
-    color: #b2b2b2;
+    color: blue;
 }
 nav a:hover{
     color: white;
