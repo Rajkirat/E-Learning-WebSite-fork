@@ -1964,12 +1964,37 @@ async function courses() {
                 document.querySelector('.topic').getElementsByTagName('h2')[0].innerText = subject + ' - ' + course;
                 document.querySelector('.topic').getElementsByTagName('iframe')[0].src = data[subject][course][0];
                 document.querySelector('.topic').getElementsByTagName('p')[0].innerText = data[subject][course][1];
-                // console.log(e);
+                document.querySelector('.topic').appendChild(document.createElement('button'));
+                document.querySelector('.topic').children[3].innerText = 'quiz';
+                document.querySelector('.topic').children[3].addEventListener('click', function () {
+                    document.querySelector('.quiz').style.display = 'block';
+                    document.querySelector('.topic').style.display = 'none';
+                    document.querySelector('.quiz').children[0].innerText = subject + ' - ' + course;
+                    Array.from(document.querySelector('.quiz').querySelectorAll('.question')).forEach((e, i) => {
+                        e.children[0].innerText = quiz[0][subject][course][i + 1][0];
+                        e.children[1].children[0].value = quiz[0][subject][course][i + 1][1];
+                        e.children[2].children[0].value = quiz[0][subject][course][i + 1][2];    
+                        e.children[3].children[0].value = quiz[0][subject][course][i + 1][3];
+                        e.children[4].children[0].value = quiz[0][subject][course][i + 1][4];
+                        Array.from(e.children).forEach(e => {
+                            var i = Array.from(e.parentElement.children).indexOf(e);
+                            if(i==0){
+                                e.innerText = quiz[0][subject][course][i + 1][0];
+                            }
+                             else {
+                                e.innerHTML = `<input type="radio" name="q${i}" value="${quiz[0][subject][course][i + 1][1]}">${quiz[0][subject][course][i + 1][1]}`;
+                            }
+                        });
+
+                    });
+                });
             });
         });
     });
 }
 function profile() {
+    console.log('profile');
+    document.querySelector('.login').style.display = 'flex';
 }
 function validate(){
     var email = document.getElementById('email').value;
@@ -2053,4 +2078,8 @@ window.addEventListener('load', function () {
             notFound();
             break;
     }
+});
+document.querySelector('.login').querySelector('.burger').addEventListener('click', function () {
+    document.querySelector('.login').style.display = 'none';
+    window.location.hash = '';
 });
