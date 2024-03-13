@@ -60,6 +60,10 @@
     border-radius: 8px;
     overflow: hidden;
     min-width: 260px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .course img {

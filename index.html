@@ -1,39 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>E-Learning Platform</title>
-        <link rel="stylesheet" href="./index.css">
-        <link rel="stylesheet" href="./public/css/nav.css">
-        <link rel="stylesheet" href="./public/css/nav565.css" media="(max-width:565px)">
-        <link id="tabscss" rel="stylesheet" href="./public/css/home.css">
-        <script src="./public/js/nav.js" defer></script>
-        <script src="./index.js" defer></script>
-    </head>
-    <body>
-        <div id="main">
-            <header>
-                <div class="burger">
-                    <div class="line1 line"></div>
-                    <div class="line2 line"></div>
-                    <div class="line3 line"></div>
-                </div>
-                <h1>E-Learning Platform</h1>
-            </header>
-            <nav>
-                <a href="./" class="active">Home</a>
-                <a href="#/courses">Courses</a>
-                <a href="#/about">About</a>
-                <a href="#/contact">Contact</a>
-                <a href="#/profile">Sign-in/Sign-up</a>
-            </nav>
-            <section>
-    
-            </section>
-            <footer>
-                <p>&copy; 2024 E-Learning Platform. All rights reserved.</p>
-            </footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sparkling Minds</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./public/css/nav.css" />
+    <link
+      rel="stylesheet"
+      href="./public/css/nav565.css"
+      media="(max-width:565px)"
+    />
+    <link id="tabscss" rel="stylesheet" href="./public/css/home.css" />
+    <script src="./public/js/nav.js" defer></script>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header>
+        <div class="burger">
+            <div class="line1 line"></div>
+            <div class="line2 line"></div>
+            <div class="line3 line"></div>
         </div>
-    </body>
+        <h1>        <img src="https://sparkingmindssaorg.files.wordpress.com/2017/12/cropped-sm_ci-1.jpg?w=1024&h=1024" alt="Sparkling Minds Logo">Sparkling Minds</h1>
+    </header>
+      <nav>
+        <a href="./" class="active">Home</a>
+        <a href="#/courses">Courses</a>
+        <a href="#/about">About</a>
+        <a href="#/contact">Contact</a>
+        <a href="#/profile">Sign-in/Sign-up</a>
+      </nav>
+      <section></section>
+      <div class="login">
+        <form>
+          <div class="burger toggle">
+            <div class="line1 line"></div>
+            <div class="line2 line"></div>
+            <div class="line3 line"></div>
+          </div>
+          <h3>Welocome To E-Learning</h3>
+          <div class="login_tab">
+            <button id="login" class="active">Login</button>
+            <button id="signup">Sign Up</button>
+          </div>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <input
+            type="password"
+            name="c-password"
+            id="c-password"
+            placeholder="Confirm Password"
+          />
+          <div class="remember">
+            <input
+              type="checkbox"
+              name="remember"
+              id="remember"
+              value="remember"
+            /><label for="remember">Remember Me</label>
+          </div>
+          <a href="#/forgot">Forgot Password?</a>
+          <button type="button" id="loginbtn">Sign in</button>
+        </form>
+      </div>
+      <footer>
+        <p>&copy; 2024 E-Learning Platform. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
 </html>

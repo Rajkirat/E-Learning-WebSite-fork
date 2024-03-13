@@ -16,6 +16,7 @@ aside{
 aside ul ul{
     display: none;
     padding: 0 0 0 20px;
+    white-space: nowrap;
 }
 aside h2{
     font-size: 20px;
@@ -38,6 +39,7 @@ aside button:hover{
     padding: 20px;
     border-radius: 13px;
     box-shadow: 0 2px 3px 2px rgba(0,0,0,0.4);
+    background: #fff;
 }
 #courses{
     display: flex;
@@ -80,4 +82,60 @@ aside button:hover{
     color: #333;
     font-weight: bold;
     padding: 0 10px;
+}
+section{
+    background-color: grey;
+}
+.topic{
+    display: none;
+}
+.topic h2{
+    margin-bottom: 15px;
+}
+.topic iframe{
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.quiz{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 8px 0 8px 5px;
+}
+
+.question{
+    padding-block: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.question div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.submit{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.submit button{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
 }

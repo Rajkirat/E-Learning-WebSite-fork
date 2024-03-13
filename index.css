@@ -19,7 +19,7 @@
 body{
     width: 100dvw;
     height: 100dvh;
-    position: fixed;
+    /* position: fixed; */
 }
 #main{
     width: 100%;
@@ -43,4 +43,124 @@ footer{
     justify-content: center;
     align-items: center;
     background-color: #b1b1b1;
+}
+.login{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000a6;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.login form{
+    width: 300px;
+    height: 380px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login form h3{
+    margin: 15px 0;
+    font-size: 20px;
+}
+.login form .burger{
+    display: block;
+    align-self: end;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.login form .burger .line{
+    width: 18px;
+}
+
+.login form input[type="text"],
+.login form input[type="password"]{
+    width: 250px;
+    height: 30px;
+    margin: 5px 0;
+    padding: 0 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    
+}
+.login form button{
+    width: 100px;
+    height: 30px;
+    margin: 5px 0;
+    padding: 0 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: #8bd969;
+    color: #fff;
+    cursor: pointer;
+}
+.login_tab{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+    padding: 0 18px;
+    gap: 10px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+}
+#login,
+#signup{
+    padding: 5px ;
+    background: #fff;
+    width: auto;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+    margin: 0 0;
+    color: #000;
+    
+    border-bottom: none;
+}
+#login.active,
+#signup.active{
+    transform: scaleY(1.05);
+    border-radius: 5px 5px 0 0;
+}
+.remember{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+    gap:10px;
+    margin: 10px 0;
+}
+.remember input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+#c-password{
+    display: none;
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1; /* Adjust background color as needed */
+}
+
+header img {
+    width: 43px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
