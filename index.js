@@ -1961,6 +1961,7 @@ async function courses() {
                 var course = e.target.innerText;
                 var subject = e.target.parentElement.parentElement.parentElement.children[0].innerText;
                 document.querySelector('.topic').style.display = 'block';
+                document.querySelector('.quiz').style.display = 'none';
                 document.querySelector('.topic').getElementsByTagName('h2')[0].innerText = subject + ' - ' + course;
                 document.querySelector('.topic').getElementsByTagName('iframe')[0].src = data[subject][course][0];
                 document.querySelector('.topic').getElementsByTagName('p')[0].innerText = data[subject][course][1];
