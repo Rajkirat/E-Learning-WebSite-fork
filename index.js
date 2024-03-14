@@ -1996,6 +1996,7 @@ async function courses() {
 function profile() {
     console.log('profile');
     document.querySelector('.login').style.display = 'flex';
+    document.body.classList.toggle('no-scroll');
 }
 function validate(){
     var email = document.getElementById('email').value;
@@ -2082,5 +2083,6 @@ window.addEventListener('load', function () {
 });
 document.querySelector('.login').querySelector('.burger').addEventListener('click', function () {
     document.querySelector('.login').style.display = 'none';
+    document.body.classList.toggle('no-scroll');
     window.location.hash = '';
 });

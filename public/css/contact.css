@@ -1,8 +1,8 @@
 .outer-container {
-    padding: 25px; /* Adjust padding as needed */
-    background-image: url('/public/images/ContactUS.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your background image */
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the background image */
+    padding: 25px; 
+    background-image: url('/public/images/ContactUS.jpg');
+    background-size: cover; 
+    background-position: center;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -10,48 +10,49 @@
     position: relative;
     z-index: 1;
     max-width: 800px;
-    margin: 0 auto; /* Removed margin-top and margin-bottom */
+    margin: 0 auto; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(0, 0, 0);
-    background-color: rgba(0,0,0, 0.2); /* Add a semi-transparent background to make the content more readable */
+    background-color: rgba(0,0,0, 0.2); 
 }
 
 h2 {
-    text-align: center; /* Align heading to the left */
+    text-align: center;
     color: whitesmoke;
     margin-bottom: 20px;
 }
-
-/* Rest of your CSS styles */
 
 label {
     display: block;
     margin-bottom: 10px;
     color: rgb(244, 241, 241);
-    text-align: left; /* Align labels to the left */
-    font-size: 20px; /* Increase font size for headings */
-    font-weight: bold; /* Make headings bold */
+    text-align: left; 
+    font-size: 20px; 
+    font-weight: bold; 
 }
 
 input[type="text"], input[type="tel"], select, textarea {
     width: 100%;
-    padding: 15px; /* Increase padding */
+    padding: 15px; 
     margin-bottom: 20px;
     border: 1px solid rgb(188, 181, 181);
     border-radius: 5px;
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.2); /* Set background to transparent */
-    font-size: 18px; /* Increase font size */
+    background-color: rgba(0, 0, 0, 0.2); 
+    font-size: 18px; 
+    color: #fff;
 }
-
+select option{
+    background-color: #333;
+}
 textarea {
-    height: 200px; /* Increase height */
+    height: 200px; 
 }
 
 input[type="submit"] {
-    display: block; /* Set display to block */
-    margin: 0 auto; /* Align to center horizontally */
+    display: block; 
+    margin: 0 auto; 
     background-color: #007bff;
     color: whitesmoke;
     padding: 15px 20px;

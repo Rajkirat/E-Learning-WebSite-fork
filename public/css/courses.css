@@ -92,6 +92,15 @@ section{
 .topic{
     display: none;
 }
+.topic button{
+    background:blue;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 25px 46% 0 46%;
+    font-weight: bold;
+    color: #F0F0F0;
+}
 .topic h2{
     margin-bottom: 15px;
 }

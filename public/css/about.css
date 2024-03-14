@@ -20,23 +20,22 @@
   .section2 {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Center items vertically */
+    align-items: center;
     margin-bottom: 30px;
   }
 
   .content1,
   .content2 {
     flex: 1;
-    padding: 0 20px; /* Added padding */
-    margin: 0 10px; /* Added margin */
-    /* font-weight: light; */
+    padding: 0 20px; 
+    margin: 0 10px;
   }
 
   .left-img,
   .right-img {
-    width: 45%; /* Adjusted width */
+    width: 45%;
     height: auto;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px;
   }
 
   .img1,
