@@ -2012,7 +2012,8 @@ function validate(){
 
 function login() {
 }
-function register() {
+function register()
+ {
 }
 
 function notFound() {
@@ -2086,3 +2087,4 @@ document.querySelector('.login').querySelector('.burger').addEventListener('clic
     document.body.classList.toggle('no-scroll');
     window.location.hash = '';
 });
+// Array.from(document.querySelector('.login_tab').querySelectorAll('button')).forEach(e.)
